@@ -72,6 +72,7 @@ chains:
 ## Learn more
 
 - [Envio docs](https://docs.envio.dev/docs/HyperIndex/overview)
+- [Somnia on Envio](https://envio.dev/chains/somnia)
 - [Deploy to Envio Cloud](https://docs.envio.dev/docs/HyperIndex/hosted-service)
 - [Migrate from a subgraph](https://docs.envio.dev/docs/HyperIndex/migration-guide)
 - [Envio Discord](https://discord.gg/envio)
