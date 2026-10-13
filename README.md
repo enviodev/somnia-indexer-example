@@ -20,6 +20,8 @@ pnpm dev
 
 ![The indexer syncing Somnia Mainnet and reaching the latest block](assets/envio-somnia-sync.gif)
 
+<sub><i>The indexer backfilling USDC transfers on Somnia Mainnet and reaching the latest block in seconds.</i></sub>
+
 Open the Hasura console at http://localhost:8080 and log in with the admin secret `testing`. The GraphQL endpoint is `http://localhost:8080/v1/graphql`.
 
 ```graphql
