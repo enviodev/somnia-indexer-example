@@ -6,9 +6,7 @@ It is the finished project from the "Indexing Somnia with Envio" tutorial in the
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/en/download) 22.15 or newer
-- [pnpm](https://pnpm.io/installation)
-- [Docker Desktop](https://www.docker.com/products/docker-desktop/), running
+- The tools listed in the [HyperIndex prerequisites](https://docs.envio.dev/docs/HyperIndex/quickstart#prerequisites), with Docker running
 - An Envio API token from [envio.dev/app/api-tokens](https://envio.dev/app/api-tokens)
 
 ## Run
@@ -19,6 +17,8 @@ cp .env.example .env # then add your ENVIO_API_TOKEN
 pnpm codegen
 pnpm dev
 ```
+
+![The indexer syncing Somnia Mainnet and reaching the latest block](assets/envio-somnia-sync.gif)
 
 Open the Hasura console at http://localhost:8080 and log in with the admin secret `testing`. The GraphQL endpoint is `http://localhost:8080/v1/graphql`.
 
@@ -54,7 +54,7 @@ The tests process a real USDC transfer from Somnia Mainnet and a simulated one. 
 
 ## Somnia Testnet
 
-To index a contract on Somnia Testnet (Shannon), use chain ID `50312` and set the HyperSync URL in `config.yaml`.
+To index a contract on Somnia Testnet, use chain ID `50312` and set the HyperSync URL in `config.yaml`.
 
 ```yaml
 chains:
