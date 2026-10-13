@@ -4,16 +4,11 @@ An [Envio HyperIndex](https://docs.envio.dev/docs/HyperIndex/overview) indexer t
 
 It is the finished project from the "Indexing Somnia with Envio" tutorial in the [Somnia docs](https://docs.somnia.network/developer/building-dapps/data-indexing-and-querying).
 
-## Prerequisites
-
-- The tools listed in the [HyperIndex prerequisites](https://docs.envio.dev/docs/HyperIndex/quickstart#prerequisites), with Docker running
-- An Envio API token from [envio.dev/app/api-tokens](https://envio.dev/app/api-tokens)
-
 ## Run
 
 ```bash
 pnpm install
-cp .env.example .env # then add your ENVIO_API_TOKEN
+cp .env.example .env # then add your ENVIO_API_TOKEN from envio.dev/app/api-tokens
 pnpm codegen
 pnpm dev
 ```
