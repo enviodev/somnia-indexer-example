@@ -1,7 +1,7 @@
 import { indexer } from "envio";
 
 indexer.onEvent(
-  { contract: "USDC", event: "Transfer" },
+  { contract: "USDCe", event: "Transfer" },
   async ({ event, context }) => {
     context.Transfer.set({
       id: `${event.transaction.hash}-${event.logIndex}`,

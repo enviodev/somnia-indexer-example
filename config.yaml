@@ -1,16 +1,16 @@
 # yaml-language-server: $schema=./node_modules/envio/evm.schema.json
 name: somnia-indexer
-description: USDC transfers on Somnia
+description: USDC.e transfers on Somnia
 field_selection:
   transaction_fields:
     - hash
 contracts:
-  - name: USDC
+  - name: USDCe
     events:
       - event: "Transfer(address indexed from, address indexed to, uint256 value)"
 chains:
   - id: 5031 # Somnia Mainnet
     start_block: 430000000
     contracts:
-      - name: USDC
+      - name: USDCe
         address: "0x28BEc7E30E6faee657a03e19Bf1128AaD7632A00"

@@ -3,11 +3,11 @@ import { createTestIndexer, TestHelpers } from "envio";
 
 const { Addresses } = TestHelpers;
 
-describe("USDC transfers on Somnia", () => {
-  it("indexes a real USDC transfer from Somnia Mainnet", async (t) => {
+describe("USDC.e transfers on Somnia", () => {
+  it("indexes a real USDC.e transfer from Somnia Mainnet", async (t) => {
     const indexer = createTestIndexer();
 
-    // Block 437549011 has one USDC transfer (tx 0x59347c1e...)
+    // Block 437549011 has one USDC.e transfer (tx 0x59347c1e...)
     await indexer.process({
       chains: {
         5031: { startBlock: 437_549_011, endBlock: 437_549_011 },
@@ -39,7 +39,7 @@ describe("USDC transfers on Somnia", () => {
         5031: {
           simulate: [
             {
-              contract: "USDC",
+              contract: "USDCe",
               event: "Transfer",
               params: { from: from!, to: to!, value: 1_000_000n },
             },
